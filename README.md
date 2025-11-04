@@ -17,7 +17,6 @@ A small Python LLM-powered GeoResearch Assistant that answers questions about ge
 - **`geo_assistant.py`**: Main assistant combining retrieval and generation
 - **`data.py`**: Sample geographic and climate knowledge base
 - **`demo.ipynb`**: Interactive Jupyter notebook demonstration
-- **`example.py`**: Simple Python script example
 
 ## Installation
 
@@ -34,34 +33,10 @@ pip install -r requirements.txt
 
 ## Quick Start
 
-### Option 1: Python Script
-
-```bash
-python example.py
-```
-
-### Option 2: Jupyter Notebook
+### Jupyter Notebook
 
 ```bash
 jupyter notebook demo.ipynb
-```
-
-### Option 3: Python Code
-
-```python
-from geo_assistant import GeoAssistant
-from data import get_dataset
-
-# Initialize assistant
-assistant = GeoAssistant()
-
-# Load knowledge base
-documents = get_dataset()
-assistant.load_knowledge_base(documents)
-
-# Ask questions
-result = assistant.ask("What is the highest mountain in the world?")
-print(result['answer'])
 ```
 
 ## Example Questions
